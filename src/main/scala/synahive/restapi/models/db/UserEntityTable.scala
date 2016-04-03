@@ -1,7 +1,7 @@
-package me.archdev.restapi.models.db
+package synahive.restapi.models.db
 
-import me.archdev.restapi.models.UserEntity
-import me.archdev.restapi.utils.DatabaseConfig
+import synahive.restapi.models.UserEntity
+import synahive.restapi.utils.DatabaseConfig
 
 trait UserEntityTable extends DatabaseConfig {
 

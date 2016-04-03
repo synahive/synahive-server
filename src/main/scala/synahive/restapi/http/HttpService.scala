@@ -1,8 +1,8 @@
-package me.archdev.restapi.http
+package synahive.restapi.http
 
 import akka.http.scaladsl.server.Directives._
-import me.archdev.restapi.http.routes._
-import me.archdev.restapi.utils.CorsSupport
+import synahive.restapi.http.routes._
+import synahive.restapi.utils.CorsSupport
 
 trait HttpService extends UsersServiceRoute with AuthServiceRoute with CorsSupport {
 

@@ -21,3 +21,10 @@ postgres-# \password postgres
 <?php
 $link = pg_connect("host=localhost dbname=groceries user=postgres password=cloud9isawesome");
 ?>
+
+#Note:
+#The DATABASE_URL for the Heroku Postgres add-on follows the below convention
+postgres://<username>:<password>@<host>:<port>/<dbname>
+#However the Postgres JDBC driver uses the following convention:
+jdbc:postgresql://<host>:<port>/<dbname>?user=<username>&password=<password>
+#Notice the additional ql at the end of the URL scheme. Due to this difference, for Postgres, you may need to hardcode the scheme to postgresql in your Java class or your Spring XML configuration.

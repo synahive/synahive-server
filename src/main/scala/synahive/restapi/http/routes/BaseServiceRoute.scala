@@ -1,9 +1,9 @@
-package me.archdev.restapi.http.routes
+package synahive.restapi.http.routes
 
 import akka.event.LoggingAdapter
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 import akka.stream.ActorMaterializer
-import me.archdev.restapi.utils.{ Config, Protocol }
+import synahive.restapi.utils.{ Config, Protocol }
 
 import scala.concurrent.ExecutionContext
 

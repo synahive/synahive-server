@@ -1,7 +1,7 @@
-package me.archdev.restapi.services
+package synahive.restapi.services
 
-import me.archdev.restapi.models.db.UserEntityTable
-import me.archdev.restapi.models.{ UserEntityUpdate, UserEntity }
+import synahive.restapi.models.db.UserEntityTable
+import synahive.restapi.models.{ UserEntityUpdate, UserEntity }
 import org.mindrot.jbcrypt.BCrypt
 
 import scala.concurrent.ExecutionContext.Implicits.global

@@ -1,4 +1,4 @@
-package me.archdev.restapi.utils
+package synahive.restapi.utils
 
 import java.util.Properties
 

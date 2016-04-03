@@ -1,4 +1,4 @@
-name          := "akka-http-rest"
+name          := "synahive-server"
 organization  := "me.archdev"
 version       := "1.0.0"
 scalaVersion  := "2.11.7"

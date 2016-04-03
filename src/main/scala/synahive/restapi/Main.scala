@@ -1,12 +1,12 @@
-package me.archdev.restapi
+package synahive.restapi
 
 import akka.actor.ActorSystem
 import akka.event.{ Logging, LoggingAdapter }
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
 
-import me.archdev.restapi.http.HttpService
-import me.archdev.restapi.utils.{ Migration, Config }
+import synahive.restapi.http.HttpService
+import synahive.restapi.utils.{ Migration, Config }
 
 import scala.concurrent.ExecutionContext
 

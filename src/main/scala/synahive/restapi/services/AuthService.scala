@@ -1,7 +1,7 @@
-package me.archdev.restapi.services
+package synahive.restapi.services
 
-import me.archdev.restapi.models.db.TokenEntityTable
-import me.archdev.restapi.models.{ TokenEntity, UserEntity }
+import synahive.restapi.models.db.TokenEntityTable
+import synahive.restapi.models.{ TokenEntity, UserEntity }
 import org.mindrot.jbcrypt.BCrypt
 
 import scala.concurrent.Future

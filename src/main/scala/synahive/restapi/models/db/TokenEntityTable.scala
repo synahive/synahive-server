@@ -1,7 +1,7 @@
-package me.archdev.restapi.models.db
+package synahive.restapi.models.db
 
-import me.archdev.restapi.models.TokenEntity
-import me.archdev.restapi.utils.DatabaseConfig
+import synahive.restapi.models.TokenEntity
+import synahive.restapi.utils.DatabaseConfig
 
 trait TokenEntityTable extends UserEntityTable with DatabaseConfig {
 

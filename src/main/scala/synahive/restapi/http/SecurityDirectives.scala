@@ -1,9 +1,9 @@
-package me.archdev.restapi.http
+package synahive.restapi.http
 
 import akka.http.scaladsl.server.directives.{ RouteDirectives, BasicDirectives, HeaderDirectives, FutureDirectives }
 import akka.http.scaladsl.server.Directive1
-import me.archdev.restapi.models.UserEntity
-import me.archdev.restapi.services.AuthService
+import synahive.restapi.models.UserEntity
+import synahive.restapi.services.AuthService
 
 trait SecurityDirectives {
 

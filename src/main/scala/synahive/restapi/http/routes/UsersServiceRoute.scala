@@ -1,11 +1,11 @@
-package me.archdev.restapi.http.routes
+package synahive.restapi.http.routes
 
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.PathMatchers.IntNumber
-import me.archdev.restapi.http.SecurityDirectives
-import me.archdev.restapi.models.{ UserEntityUpdate, UserEntity }
-import me.archdev.restapi.services.UsersService
+import synahive.restapi.http.SecurityDirectives
+import synahive.restapi.models.{ UserEntityUpdate, UserEntity }
+import synahive.restapi.services.UsersService
 
 import spray.json._
 

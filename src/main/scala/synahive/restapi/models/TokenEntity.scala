@@ -1,4 +1,4 @@
-package me.archdev.restapi.models
+package synahive.restapi.models
 
 import java.util.UUID
 
