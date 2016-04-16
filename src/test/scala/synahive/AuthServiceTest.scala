@@ -1,8 +1,8 @@
-package me.archdev
+package synahive
 
 import akka.http.scaladsl.model.{ StatusCodes, MediaTypes, HttpEntity }
-import me.archdev.restapi.http.routes.AuthServiceRoute
-import me.archdev.restapi.models.{ TokenEntity, UserEntity }
+import synahive.restapi.http.routes.AuthServiceRoute
+import synahive.restapi.models.{ TokenEntity, UserEntity }
 import spray.json._
 
 class AuthServiceTest extends BaseServiceTest {

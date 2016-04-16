@@ -1,8 +1,8 @@
-package me.archdev
+package synahive
 
 import akka.http.scaladsl.model.{ HttpEntity, MediaTypes }
-import me.archdev.restapi.http.routes.UsersServiceRoute
-import me.archdev.restapi.models.UserEntity
+import synahive.restapi.http.routes.UsersServiceRoute
+import synahive.restapi.models.UserEntity
 import org.scalatest.concurrent.ScalaFutures
 
 import spray.json._

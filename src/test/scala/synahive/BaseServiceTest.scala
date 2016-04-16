@@ -1,8 +1,8 @@
-package me.archdev
+package synahive
 
-import me.archdev.restapi.http.HttpService
-import me.archdev.restapi.models.{ TokenEntity, UserEntity }
-import me.archdev.restapi.utils.Migration
+import synahive.restapi.http.HttpService
+import synahive.restapi.models.{ TokenEntity, UserEntity }
+import synahive.restapi.utils.Migration
 import org.scalatest._
 
 import akka.event.{ NoLogging, LoggingAdapter }
@@ -17,9 +17,9 @@ trait BaseServiceTest extends WordSpec with Matchers with ScalatestRouteTest wit
   import driver.api._
 
   val testUsers = Seq(
-    UserEntity(Some(1), "Arhelmus", "test"),
-    UserEntity(Some(2), "Arch", "test"),
-    UserEntity(Some(3), "Hierarh", "test")
+    UserEntity(Some(1), "Synahive", "test"),
+    UserEntity(Some(2), "Marius", "test"),
+    UserEntity(Some(3), "Gerald", "test")
   )
 
   val testTokens = Seq(
