@@ -1,0 +1,29 @@
+{
+  "name": "synahive-server",
+  "scripts": {
+  },
+  "env": {
+    "PSQL_PASSWORD": {
+      "required": true
+    },
+    "PSQL_URL": {
+      "required": true
+    },
+    "PSQL_USER": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/scala"
+    }
+  ]
+}
