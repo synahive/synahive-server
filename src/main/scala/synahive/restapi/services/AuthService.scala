@@ -25,6 +25,7 @@ trait AuthService extends TokenEntityTable {
     }
   }
 
+  //Create a new user and generate a token
   def signUp(newUser: UserEntity): Future[TokenEntity] = {
     UsersService.createUser(newUser).flatMap(user => createToken(user))
   }

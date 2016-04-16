@@ -13,7 +13,10 @@ trait LanguageClassification extends ClassifierEntityTable {
 
   import driver.api._
   
-  def getLanguage(text: String): 
+  def getLanguage(token: String): Future[TranslatedText] = {
+    AuthService.authenticate(token)
+    
+  }
 
 
 }

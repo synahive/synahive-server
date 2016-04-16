@@ -25,15 +25,24 @@ trait AuthServiceRoute extends AuthService with BaseServiceRoute with SecurityDi
         }
       }
     } ~
-      path("signUp") {
-        pathEndOrSingleSlash {
-          post {
-            entity(as[UserEntity]) { userEntity =>
-              complete(Created -> signUp(userEntity).map(_.toJson))
-            }
+    path("signUp") {
+      pathEndOrSingleSlash {
+        post {
+          entity(as[UserEntity]) { userEntity =>
+            complete(Created -> signUp(userEntity).map(_.toJson))
           }
         }
       }
+    } ~
+    //Authenticate the user based on token ID
+      path("authenticate") {
+      pathEndOrSingleSlash {
+        post {
+          entity(as[String]) { tokenEntity =>
+            complete(Created -> authenticate(tokenEntity).map(_.toJson))
+          }
+        }
+      }
+    }    
   }
-
 }
