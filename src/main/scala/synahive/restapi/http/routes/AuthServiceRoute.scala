@@ -39,7 +39,7 @@ trait AuthServiceRoute extends AuthService with BaseServiceRoute with SecurityDi
       pathEndOrSingleSlash {
         post {
           entity(as[String]) { tokenEntity =>
-            complete(Created -> authenticate(tokenEntity).map(_.toJson))
+            complete(authenticate(tokenEntity).map(_.toJson))
           }
         }
       }
